@@ -7,6 +7,8 @@
 \usepackage{amssymb}   % Símbolos adicionales
 %\setlength{\columnsep}{20pt}
 %\setlength{\columnseprule}{0.6pt}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
 \begin{document}
 
 
@@ -29,23 +31,99 @@
 
 %--------------------------------------
 
+\begin{center}
+\textbf{ELECTIVO PROBABILIDAD Y ESTADÍSTICA III MEDIO}\\
+ \textbf{CONTROL I }
+\end{center}
 
 \begin{center}
-   {\Large \textbf{EVALUACIÓN SUMATIVA}\\
+%Tabla de datos
+\begin{tikzpicture}[font=\bfseries]
+    % Definición de dimensiones
+    \def\ancho{16}
+    \def\alto{1.2}
+    \def\sep{0.08} % Separación para el doble borde
 
-\textbf{ELECTIVO PROBABILIDAD Y ESTADÍSTICA III MEDIO}}
+    % Borde exterior (Doble línea)
+    \draw[line width=0.8pt] (0,0) rectangle (\ancho, \alto);
+    \draw[line width=0.8pt] (-\sep, -\sep) rectangle (\ancho+\sep, \alto+\sep);
+
+    % Línea divisoria horizontal central (Doble línea)
+    \draw[line width=0.8pt] (0, \alto/2 - 0.04) -- (\ancho, \alto/2 - 0.04);
+    \draw[line width=0.8pt] (0, \alto/2 + 0.04) -- (\ancho, \alto/2 + 0.04);
+
+    % --- FILA SUPERIOR ---
+    % Nombre
+    \node[anchor=west] at (0.2, 3*\alto/4) {NOMBRE:};
+    
+    % Puntaje
+    \node[anchor=east] at (\ancho-2.2, 3*\alto/4) {PUNTAJE:};
+    \node[anchor=east] at (\ancho-0.5, 3*\alto/4) {/};
+
+    % --- FILA INFERIOR ---
+    % Curso
+    \node[anchor=west] at (0.2, \alto/4) {CURSO:};
+    
+    % Fecha
+    \node[anchor=center] at (\ancho/2 - 0.5, \alto/4) {FECHA:};
+    
+    % Nota
+    \node[anchor=west] at (\ancho-4, \alto/4) {NOTA:};
+\end{tikzpicture}
 \end{center}
-\begin{center}
-\begingroup
-\renewcommand{\arraystretch}{1.5} % Ajusta la altura de las filas
-\begin{tabular}{| p{0.35\textwidth} p{0.25\textwidth} p{0.20\textwidth} |} 
- \hline 
- \textbf{NOMBRE:} & & \textbf{PUNTAJE:} \quad\quad / \hfill \\ [0.5ex] 
- \hline
- \textbf{CURSO:} & \textbf{FECHA:} & \textbf{NOTA:} \\ [0.5ex] 
- \hline 
-\end{tabular}
-\endgroup
-\end{center}
+
+Instrucciones: 
+
+\begin{enumerate}
+
+
+
+\item \begin{flushleft}
+    \textbf{EJERCICIO DE TEORÍA DE CONJUNTOS} \\
+    \vspace{0.3cm}
+    Sea el conjunto:
+    \[ S = \{ 5, \{1, 2\}, \{8\}, 1, \{ \varnothing \}, 8, 10, \{10\} \} \]
+    
+    Indique si las siguientes afirmaciones son verdaderas (V) o falsas (F), según corresponda:
+\end{flushleft}
+
+\begin{multicols}{2}
+\begin{enumerate}[A)]
+    \item $\{1, 2\} \in S$ (\quad)
+    \item $\{1, 2\} \subset S$  (\quad)
+    \item $8 \in S$ (\quad)
+    \item $\{8\} \subset S$  (\quad)
+    \item $\{\{8\}\} \subset S$  (\quad)
+    \item $\varnothing \in S$ (\quad)
+    \item $\varnothing \subset S$ (\quad)
+    \item $\{\varnothing\} \in S$  (\quad)
+    \item $10 \subset S$ (\quad)
+    \item $\{10\} \subset S$ (\quad)
+\end{enumerate}
+\end{multicols}
+\item $A =$, $ B$, $ U = $. Hallar
+\begin{enumerate}
+\item Representa en un diagrama de Venn los conjuntos
+\item union
+\item Intersección
+\item diferencia simétrica
+\item Complemento
+\item Potencia
+\end{enumerate}
+\item Aplicaciones
+\item Expresar por extensión
+\item Hallar 6 elementos
+\item Hallar a, b si A =B
+
+\end{enumerate}
+
+
+
+
+
+
+
+   
 
 \end{document}
+
