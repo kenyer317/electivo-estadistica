@@ -1,0 +1,1258 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\input{preambulo_est}
+\usepackage{enumerate}
+%\setlength{\columnsep}{20pt}
+%\setlength{\columnseprule}{0.6pt}
+\begin{document}
+
+
+%Encabezado ---------------------------
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\includegraphics[scale = 0.3]{logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\raggedleft\fbox{%
+            \begin{tabular}{l}
+                \textbf{Departamento de Matemáticas} \\
+                Marzo/2026
+            \end{tabular}%
+        }
+\end{minipage}
+\vspace{20pt}
+
+%--------------------------------------
+
+
+\begin{center}
+    {\Large \textbf{Guía de Teoría de Conjuntos}\\
+    Tercero Medio: Electivo Probabilidad y Estadística}
+\end{center}
+\section{Conjuntos}
+
+ Un \textbf{{conjunto}} es una colección \textbf{bien definida} de objetos llamados \textbf{elementos}.
+ 
+ \subsection*{Ejemplos}
+ \begin{multicols}{2}
+     \begin{enumerate}
+        \item Conjunto de los días de la semana.
+        \item Conjunto de números pares.
+        \item Conjunto de vocales.
+        \item Conjunto de los planetas del sistema solar.
+        \item Conjunto de los miembros de una familia.
+        \item Conjunto de los países de América.
+\end{enumerate}
+ \end{multicols}
+ 
+\section{Notación para conjuntos}
+\begin{enumerate}
+    \item Los conjuntos \textbf{se nombran con letras mayúsculas} ($\mathbf{A}, \mathbf{B}, \mathbf{C},\ldots ,X$).
+    \item Los elementos se \textbf{escriben entre llaves} $\mathbf{\{\dots\}}$.
+    \item \textbf{Pertenencia:} Decimos que un elemento \textit{x} pertenece a un conjunto \(A\) cuando está dentro de él. Esto se escribe como \(x \in A\) y se lee “x pertenece al conjunto A”.  
+Si un elemento no está dentro del conjunto, escribimos \(x \notin A\), que se lee “x no pertenece al conjunto A”.
+
+Ejemplo: si \(A = \{1,2,3\}\), entonces \(1 \in A\) porque aparece en el conjunto, y \(5 \notin A\) porque no aparece.
+\end{enumerate}
+
+\section{Conjuntos Numéricos Importantes}
+\begin{itemize}
+    \item \textbf{Números Naturales:}\quad $\mathbb{N} = \{1, 2, 3,4, 5 ...\}$.
+    \item \textbf{Números Enteros:}\quad$\mathbb{Z} = \big\{0, 1, -1, 2, -2, 3, -3, 4, -4, 5, -5, ...\big\}$.
+    \item \textbf{Números Racionales:}\quad $\mathbb{Q} = \left\{\dfrac{a}{b} \textbf{ tales que } a, b\in \mathbb{Z}, b\neq 0\right\}$.
+    \item \textbf{Números Irracionales:} Números que no pueden ser escritos como una fracción. Los números irracionales tienen expansión decimal infinita y no periódica. Se denotan por $\mathbb{I}$. Ejemplos: $\sqrt{2}, \pi$ son números irracionales.
+    \item \textbf{Números Reales:} es el conjunto formado por todos los números racionales y todos los números irracionales. Se denota por $\mathbb{R}$.
+
+\textbf{Ejemplo Desarrollado:}\\
+    Complete la tabla usando los símbolos $\in$ ó $\notin$ según corresponda.
+    \[
+\begin{array}{|c|c|c|c|c|}
+\hline
+\text{Número} & \mathbb{N} & \mathbb{Z} &\mathbb{Q} & \mathbb{R} \\
+\hline
+5      &               &               &         &      \\
+\hline
+-3     &               &               &         &      \\
+\hline
+0      &               &               &         &      \\
+\hline
+2.5    &               &               &         &      \\
+\hline
+\sqrt{2} &             &               &          &     \\
+\hline
+-7.8   &               &               &          &     \\
+\hline
+\end{array}
+\]
+
+\end{itemize}
+ 
+\section{Especificación de un Conjunto}
+
+Para describir o “decir cuáles son” los elementos de un conjunto, existen dos formas principales:
+
+\begin{itemize}
+
+\item \textbf{Por Extensión}: Consiste en \textit{listar explícitamente} todos los elementos del conjunto, uno por uno, dentro de llaves.  
+Esta forma se usa cuando los elementos son pocos o fáciles de enumerar.
+
+\begin{enumerate}
+    \item \( A = \{a, e, i, o, u\} \) \qquad (todas las vocales)
+    \item \( C = \{0,1,2,3,4,5,6,7,8,9\} \) \qquad(todos los dígitos)
+\end{enumerate}
+
+\item \textbf{Por Comprensión:} En lugar de escribir todos los elementos de un conjunto, se describe la 
+\textit{regla} o \textit{propiedad} que deben cumplir esos elementos. Para escribir un conjunto por comprensión, se usa normalmente la letra \(\mathbf{x}\) \textbf{para representar 
+un elemento cualquiera del conjunto}, junto con el \textbf{símbolo }\( \mathbf{:} \), que se lee ``tal que''. 
+Este símbolo indica que \(x\) cumple la propiedad , támbien se usa el \textbf{símbolo} $|$ para indicar lo mismo que $:$.
+
+\subsection*{Ejemplos}
+
+
+\begin{enumerate}
+    \item $
+A = \{x : x \text{ es un número par}\}
+$
+
+Se lee: ``A es el conjunto de todos los \(x\) tal que \(x\) es un número par''.
+    \item \( D = \{x \mid x \text{ es una vocal}\} \)
+    
+    Se lee: ``D es el conjunto de todos los \(x\) tal que \(x\) es una vocal''.
+    \item \( E = \{x : x \text{ es un número par entre 1 y 10}\} \)
+    
+    Se lee: ``E es el conjunto de todos los \(x\) tal que \(x\) es un número par entre 1 y 10''.
+    \item \( F = \{x : x \text{ es un país de Sudamérica}\} \)
+    
+    Se lee: ``F es el conjunto de todos los \(x\) tal que \(x\) es un país de Sudamérica''.
+\end{enumerate}
+\end{itemize}
+
+\section{Conjuntos Especiales}
+\begin{itemize}
+    \item Conjunto \textbf{Vacío} $\varnothing$ o $\{\,\,\}$: es el conjunto que no tiene ningún elemento. Es como una caja que existe, pero está completamente vacía. 
+    \item Conjunto \textbf{Universo} $U$: Es el conjunto que agrupa a todos los elementos relevantes dentro de un contexto o problema específico. Es el marco de referencia que contiene a otros conjuntos bajo estudio.
+ 
+\textbf{Ejemplos:}
+\begin{enumerate}
+    \item Si estudiamos las notas de un curso, entonces \(U = \{1,2,3,4,5,6,7\}\), que representa todas las notas posibles.
+    \item Si se estudian números pares e impares, \(U\) podría ser el conjunto de los números naturales \(\mathbb{N}=\{1,2,3,\dots \}\)..
+\end{enumerate}
+    \item Conjunto \textbf{Unitario}: Conjunto con un sólo elemento.
+\end{itemize}
+
+\section{Diagramas de Venn}
+Un \textbf{diagrama de Venn} es una forma gráfica de representar un conjunto.
+
+\begin{center}
+\begin{tikzpicture}
+    % Dibujar el rectángulo del universo
+    \draw[line width = 2pt] (1,0) rectangle (7,4);
+    \node at (1,4)[above] {$\mathbf{U}$}; % Universo
+
+    % Dibujar el círculo del conjunto A
+    \draw[line width = 2pt, fill = blue, fill opacity = 0.3] (4,2) circle (1.5);
+    \node at (5,3.6) {$\mathbf{A}$};
+    % Dibujar elementos del conjunto
+   \draw[ fill=black] (4,2) circle (0.1);      % Punto 1
+    \draw[ fill=brown] (4.5,3) circle (0.1);    % Punto 2
+    \draw[ fill=red] (2.7,2) circle (0.1);    % Punto 3
+    \draw[ fill=green] (3.5,2.8) circle (0.1);    % Punto 4
+    
+    \draw[ fill=gray] (5.3,2.3) circle (0.1);  % Punto 6
+    \draw[ fill=blue] (5.3,1.8) circle (0.1);  % Punto 7
+    \draw[fill=yellow] (3.2,1.6) circle (0.1);  % Punto 8
+    \draw[ fill=orange] (3.8,1) circle (0.1);  % Punto 9
+    \draw[fill=purple] (4.8,1.1) circle (0.1);  % Punto 10
+
+\end{tikzpicture}
+\end{center}
+\subsection*{Ejemplo Desarrollado}
+
+En una encuesta, $20$ personas prefieren el fútbol, $15$ prefieren el básquetbol y $5$ prefieren ambos. ¿Cuántas personas prefieren solo fútbol? ¿Cuántas prefieren solo básquetbol?
+\vspace{4cm}
+
+\section{Subconjuntos}
+Sean $A$ y $B$ conjuntos. Diremos que $\mathbf{A}$\textbf{ es subconjunto de} $\mathbf{B}$ 
+o que $\mathbf{A}$ \textbf{está incluido en} $\mathbf{B}$, y escribiremos $\mathbf{A \subset B}$, 
+si todo elemento de $A$ es también elemento de $B$. Esto es, simbólicamente:
+
+\[
+\mathbf{A \subset B \Longleftrightarrow (\forall x)(x \in A \; \Rightarrow \;  x\in B).}
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+% Rectángulo del conjunto universal
+\draw[line width=2pt] (1,0) rectangle (7,4);
+% Conjunto B (elipse)
+\draw[line width=2pt, fill=red!30, fill opacity=0.3] 
+(4,2) ellipse (2 and 1.3);
+
+% Conjunto A (círculo dentro de B)
+\draw[line width=2pt, fill=blue!40, fill opacity=0.4] 
+(4,2) circle (0.9);
+% Etiquetas
+\node at (1,4)[left] {$\mathbf{U}$};
+\node at (4,2) {$\mathbf{A}$};
+\node at (6,3.2) {$\mathbf{B}$};
+
+% Texto inferior
+\node at (4,-0.5) {$\mathbf{A \subset B}$};
+
+\end{tikzpicture}
+
+\end{center}
+
+Si existe al menos un elemento de $A$ que no esté en $B$, decimos que $\mathbf{A}$ \textbf{no está incluido en} $\mathbf{B}$. Lo cual se denota por $\mathbf{A\not\subset B}$ y se lee "$A$ no está contenido en $B$".
+
+
+\subsection*{Ejemplo Desarrollado} 
+
+Sea \(A = \{1, 2, 3\}\) y \(B = \{1, 2, 3, 4, 5\}\).
+
+\begin{itemize}
+    \item Como todos los elementos de \(A\) aparecen en \(B\), entonces:  
+    \[
+    A \subset B.
+    \]
+
+    \item Pero no todos los elementos de \(B\) están en \(A\) (por ejemplo, 4 y 5 no aparecen), por lo tanto:  
+    \[
+    B \not\subset A.
+    \]
+
+\end{itemize}
+
+\subsection*{Ejemplo Desarrollado}
+
+
+Completa con el símbolo $ \subset$ ó $\not\subset$ según corresponda.
+
+\begin{multicols}{3}
+    \begin{enumerate}
+    \item $\mathbb{N}\,\line(1,0){15}\,  \mathbb{Z}$
+    \item $\mathbb{Z}\,\line(1,0){15}\,  \mathbb{N}$
+    \item $\mathbb{N}\,\line(1,0){15}\,  \mathbb{R}$
+    \item $\mathbb{R}\,\line(1,0){15}\,  \mathbb{N}$
+    \item $\mathbb{R}\,\line(1,0){15}\,  \mathbb{R}$
+    \item $\mathbb{Q}\,\line(1,0){15}\,  \mathbb{Z}$
+    \item $\mathbb{Z}\,\line(1,0){15}\,  \mathbb{Q}$
+    \item $\mathbb{Q}\,\line(1,0){15}\,  \mathbb{N}$
+    \item $\mathbb{N}\,\line(1,0){15}\,  \mathbb{N}$
+    \item $\mathbb{R}\,\line(1,0){15}\,  \mathbb{Z}$
+\end{enumerate}
+\end{multicols}
+\section{Igualdad de Conjuntos}
+Dos conjuntos $A$, $ B$ son iguales $(A=B)$ si tienen los mismos elementos. Esto es, simbólicamente
+$$A=B \Longleftrightarrow (A\subset B \text{ y } B\subset A).$$
+en caso contrario decimos que son distintos y escribimos $A\neq B.$
+
+\subsection*{Ejemplos}
+\begin{enumerate}
+    \item  Sean $C = \{ 1, 2, 3\}$, $F = \{x\in \mathbb{N}: x < 4\}$. Entonces  $C=F$.
+    \item Sean $ A = \{1, 2\} $, 
+$ B = \{x \in \mathbb{R} \mid x^2 - 3x + 2 = 0\} $. Entonces $A=B$.
+\end{enumerate}
+
+
+
+\section{Operaciones con conjuntos}
+\begin{enumerate}
+\item \textbf{La unión} de $A$ y $B$  es el conjunto formado por los elementos que están en $A$, en $B$ o en ambos.
+$$\mathbf{A\cup B = \{x: x\in A \text{ o } x\in B\}}.$$
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+
+\draw[line width=2pt] (0,0) rectangle (8,6);
+
+\draw[line width=2pt] (3,2.75) circle(2); % A
+\draw[line width=2pt] (5,2.75) circle(2); % B
+
+\begin{scope}
+
+\clip (0,0) rectangle (8,6);
+\fill[pattern=north east lines] (3,2.75) circle(2);
+\fill[pattern=north east lines] (5,2.75) circle(2);
+
+\end{scope}
+
+\node at (1.5,5) {$\mathbf{A}$};
+\node at (6,5) {$\mathbf{B}$};
+\node at (0,6)[above left] {$\mathbf{U}$};
+
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Ejemplos}
+\begin{enumerate}
+    \item Sea \(A = \{\text{Matemática}, \text{Lenguaje}, \text{Historia}\}\)  
+    y \(B = \{\text{Historia}, \text{Biología}, \text{Inglés}\}\).  
+    
+    \[
+    A \cup B = \{\text{Matemática}, \text{Lenguaje}, \text{Historia}, \text{Biología}, \text{Inglés}\}.
+    \]
+
+    % Ejemplo 2
+    \item Sea \(C = \{\text{Ana}, \text{Luis}, \text{Pedro}\}\)  
+    y \(D = \{\text{Luis}, \text{Carla}\}\).  
+
+        \[
+    C\cup D = \{\text{Ana}, \text{Luis}, \text{Pedro}, \text{Carla}\}.
+    \]
+
+
+
+    % Ejemplo numérico
+    \item Sea \(A = \{1, 3, 5, 7\}\)  
+    y \(B = \{2, 3, 4, 8\}\).  
+   \[
+    A \cup B = \{1, 2, 3, 4, 5, 7, 8\}.
+    \]
+
+\end{enumerate}
+
+\item \textbf{La intersección} de $A$ y $B$ es el conjunto formado por los elementos comúnes de ambos conjuntos.
+$$\mathbf{A\cap B = \{x: x\in A \text{ y } x\in B\}}.$$
+
+\begin{center}
+\begin{tikzpicture}[scale= 0.6]
+
+\draw[line width=2pt] (0,0) rectangle (8,6);
+
+\draw[line width=2pt] (3,2.75) circle(2); % A
+\draw[line width=2pt] (5,2.75) circle(2); % B
+
+\begin{scope}
+
+\clip (3,2.75) circle(2);
+\clip (5,2.75) circle(2);
+
+\fill[pattern=north east lines] (0,0) rectangle (8,6);
+
+\end{scope}
+
+\node at (1.5,5) {$\mathbf{A}$};
+\node at (6,5) {$\mathbf{B}$};
+\node at (0,6)[above left] {$\mathbf{U}$};
+
+\end{tikzpicture}
+\end{center}
+\subsection*{Ejemplos}
+
+\begin{enumerate}
+
+    % Ejercicio 1
+    \item Sea \(A = \{1, 2, 3, 4, 5\}\) 
+    y \(B = \{3, 4, 6, 8\}\).  
+    Determine \(A \cap B\).
+
+    
+    \[
+    A \cap B = \{3, 4\}
+    \]
+
+    % Ejercicio 2
+    \item Sea \(C = \{\text{Matemática}, \text{Ciencias}, \text{Historia}\}\)
+    y \(D = \{\text{Historia}, \text{Inglés}, \text{Matemática}\}\).  
+    
+
+    
+    \[
+    C\cap D = \{\text{Matemática},\ \text{Historia}\}
+    \]
+
+    % Ejercicio 3
+    \item Sea \(A = \{\text{Ana}, \text{Pedro}, \text{Luis}\}\)
+    y \(B = \{\text{Luis}, \text{Carla}, \text{Pedro}\}\).  
+    
+
+   
+    \[
+    A \cap B = \{\text{Luis},\ \text{Pedro}\}
+    \]
+
+\end{enumerate}
+\item \textbf{La diferencia} de $A$ y $B$ es el conjunto formado por los elementos de $A$ que no están en $B$.
+$$\mathbf{A-B = \{x: x\in A \text{ y } x\notin B\}}.$$
+
+\begin{center}
+
+\begin{tikzpicture}[scale=0.85]
+
+% Rectángulo del conjunto universal
+\draw[line width=2pt] (1,0) rectangle (7,4);
+
+% Región A - B
+\begin{scope}
+\clip (3,2) circle (1.5);          % limitar a A
+\fill[pattern=north east lines, opacity=0.5] (3,2) circle (1.5);
+\end{scope}
+
+\begin{scope}
+\clip (5,2) circle (1.5);          % eliminar la intersección
+\fill[white, ] (3,2) circle (1.5);
+\end{scope}
+
+% Bordes de los conjuntos
+\draw[line width=2pt] (3,2) circle (1.5);
+\draw[line width=2pt] (5,2) circle (1.5);
+
+% Etiquetas
+\node at (1,4)[left] {$U$};
+\node at (2,3.5) {$A$};
+\node at (6,3.5) {$B$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Observación}: No son iguales $A-B$ y $B-A$.
+
+\subsection*{Ejemplos}
+\begin{enumerate}
+
+    % Ejemplo 1 - Números
+    \item Sea \(A = \{1, 2, 3, 4, 5\}\) 
+    y \(B = \{3, 5, 7\}\).  
+    Halle la diferencia \(A - B\).
+    \[
+    A - B = \{1, 2, 4\}
+    \]
+
+    % Ejemplo 2 - Frutas
+    \item Sea \(C = \{\text{manzana},\ \text{pera},\ \text{uva},\ \text{plátano}\}\)
+    y \(D = \{\text{uva},\ \text{plátano}\}\).  
+    Determine \(C - D\).
+
+    
+    \[
+    C - D = \{\text{manzana},\ \text{pera}\}
+    \]
+
+    % Ejemplo 3 - Estudiantes
+    \item Sea \(A = \{\text{Ana},\ \text{Luis},\ \text{Pedro},\ \text{Carla}\}\)
+    y \(B = \{\text{Luis},\ \text{Carla}\}\).  
+    Encuentre \(A - B\).
+
+    
+    \[
+    A - B = \{\text{Ana},\ \text{Pedro}\}
+    \]
+
+\end{enumerate}
+
+
+\item \textbf{La diferencia simétrica} entre dos conjuntos \textbf{A} y \textbf{B} es el conjunto de elementos que pertenecen a uno de los dos conjuntos, pero no a ambos al mismo tiempo. Es decir, son los elementos que están solo en \textbf{A }o solo en \textbf{B}.
+    $$A\Delta B = (A-B)\cup (B-A)$$
+   
+    \begin{center}
+        \begin{tikzpicture}[scale=0.65]
+
+\draw[line width=2pt] (0,0) rectangle (8,6);
+
+\draw[line width=2pt] (3,2.75) circle(2); % A
+\draw[line width=2pt] (5,2.75) circle(2); % B
+
+% Parte A-B
+\begin{scope}
+\clip (3,2.75) circle(2);
+\fill[pattern=north east lines] (0,0) rectangle (8,6);
+\fill[white] (5,2.75) circle(2);
+\end{scope}
+
+% Parte B-A
+\begin{scope}
+\clip (5,2.75) circle(2);
+\fill[pattern=north east lines] (0,0) rectangle (8,6);
+\fill[white] (3,2.75) circle(2);
+\end{scope}
+
+\node at (1.5,5) {$\mathbf{A}$};
+\node at (6,5) {$\mathbf{B}$};
+\node at (0,6)[above left] {$\mathbf{U}$};
+
+\end{tikzpicture}
+    \end{center}
+    
+\subsection*{Ejemplos}
+\begin{enumerate}
+
+    % Ejemplo 1 - Números
+    \item Sea \(A = \{1, 2, 3, 4\}\) 
+    y \(B = \{3, 4, 5, 6\}\).  
+    Halle la diferencia simétrica \(A \triangle B\).
+
+   
+    \[
+    A \triangle B = \{1, 2, 5, 6\}
+    \]
+
+    % Ejemplo 2 - Animales
+    \item Sea \(A = \{\text{perro},\ \text{gato},\ \text{conejo}\}\)
+    y \(B = \{\text{gato},\ \text{hamster},\ \text{perro}\}\).  
+   
+
+   
+    \[
+    A \triangle B = \{\text{conejo},\ \text{hamster}\}
+    \]
+
+    % Ejemplo 3 - Asignaturas
+    \item Sea \(A = \{\text{Matemática},\ \text{Historia},\ \text{Arte}\}\)
+    y \(B = \{\text{Historia},\ \text{Biología},\ \text{Arte}\}\).  
+
+    \[
+    A \triangle B = \{\text{Matemática},\ \text{Biología}\}
+    \]
+
+\end{enumerate}
+
+
+\item \textbf{El complemento} de un conjunto $A$ denotada por $\mathbf{A^c}$ es el conjunto $U-A$. Es decir, el conjunto de todos los elementos  del universo que no pertencen a $A$.
+$$\mathbf{A^c = \{x: x\notin A\}}.$$
+\end{enumerate} 
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+
+% Rectángulo del conjunto universal
+\draw[line width=2pt] (1,0) rectangle (7,4);
+
+% Región A^c
+\fill[pattern=north east lines, opacity=0.4, even odd rule]
+(1,0) rectangle (7,4)
+(4,2) circle (1.5);
+
+% Bordes de los conjuntos
+\draw[line width=2pt] (4,2) circle (1.5);
+
+% Etiquetas
+\node at (1,4)[left] {$\mathbf{U}$};
+\node at (4,2.5) {$\mathbf{A}$};
+\node at (2,3.5)[draw, rectangle, fill=white] {$\mathbf{A^c}$};
+\end{tikzpicture}
+\end{center}
+\subsection*{Ejemplos}
+\begin{enumerate}
+
+    % Ejemplo 1
+    \item Sea el conjunto universal \(U = \{1,2,3,4,5,6,7,8\}\)  
+    y \(A = \{2,4,6\}\).  
+    
+
+  
+    \[
+    A^{c} = \{1,3,5,7,8\}.
+    \]
+
+    % Ejemplo 2
+    \item Sea el conjunto universal  
+    \(U = \{\text{perro},\ \text{gato},\ \text{conejo},\ \text{hamster}\}\)  
+    y \(B = \{\text{gato},\ \text{conejo}\}\).  
+    
+
+   
+    \[
+    B^{c} = \{\text{perro},\ \text{hamster}\}.
+    \]
+
+    % Ejemplo 3
+    \item Sea el conjunto universal 
+\(U = \{\text{rojo},\ \text{azul},\ \text{verde},\ \text{amarillo}\}\)  
+y \(D = \{\text{rojo},\ \text{verde}\}\).  
+\[
+D^{c} = \{\text{azul},\ \text{amarillo}\}.
+\]
+\end{enumerate}
+
+
+
+
+\section{Conjunto Potencia}
+El conjunto potencia (o conjunto de las partes) de un conjunto $A$, denotado como $P(A)$ es el conjunto formado por todos los subconjuntos posibles de $A$. Por comprensión se expresa como
+
+$$\mathbf{P}(A)=\{X: X\subset A\}.$$
+
+
+\subsection*{Propiedades}
+
+\begin{itemize}
+    \item \textbf{Elementos notables:} Para cualquier conjunto $A$, se cumple que:
+    \[
+    \emptyset \in \mathbf{P}(A).\quad \text{y} \quad A \in \mathbf{P}(A).
+    \]
+    \item Si $x\in A$ entonces $\{x\}\subset A$ y  $\{x\}\in \mathbf{P}(A).$
+\end{itemize}
+
+
+\subsection*{Ejemplo}
+\begin{itemize}
+    \item Si $A = \{1, 2\}$, entonces su conjunto potencia es:
+$$\mathbf{P(A)}=\{\varnothing,\{1\},\{2\},\{1,2\}\}.
+$$ 
+\end{itemize}
+
+\section{Producto Cartesiano de Conjuntos}
+
+
+
+\textbf{Concepto de par ordenado.}  
+Un \textbf{par ordenado }está formado por dos elementos, $\mathbf{a}$ y $\mathbf{b}$, que siguen un orden específico.  
+Se representa como $\mathbf{(a, b)}$, donde:
+\begin{itemize}
+    \item El primer elemento se denomina \textbf{primera componente}.
+    \item El segundo elemento se denomina \textbf{segunda componente}.
+\end{itemize}
+
+\textbf{Observaciones:}
+\begin{itemize}
+    \item Dos pares ordenados $(a, b)$ y $(c, d)$ son iguales si y solo si $a = c$ y $b = d$.
+    \item El par ordenado $(a, b)$ es distinto de $(b, a)$, salvo que $a = b$.
+    \item Es posible que ambos elementos coincidan, por ejemplo $(a, a)$.
+\end{itemize}
+
+\textbf{Producto cartesiano.}  
+Dados dos conjuntos $A$ y $B$, se define el producto cartesiano como el conjunto de todos los pares ordenados $(a, b)$ con $a \in A$ y $b \in B$:
+
+\[
+A \times B = \{(a, b) \mid a \in A, \; b \in B\}.
+\]
+
+\begin{itemize}
+    \item Ejemplo 1. Sea $A = \{1, 2\}$ y $B = \{3, 4, 5\}$. Entonces:
+\[
+A \times B = \{(1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5)\}.
+\]
+\end{itemize}
+  
+
+
+
+
+
+
+\section{Cardinalidad de un Conjunto}
+
+La \textbf{cardinalidad} de un conjunto $A$ representa la cantidad total de elementos que lo integran. \textbf{Notación:} Se denota comúnmente como $n(A)$, $|A|$ o también $\#A$.
+\subsection*{Ejemplos}
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $A=\{2,4,6,8\} \Rightarrow
+\#A=4.$
+\item $ B=\{a,e,i,o,u\}
+\Rightarrow\#B=5
+$
+
+\item $C=\{1,3,3,5,5,7\} \Rightarrow\#C=4$
+
+\item $
+A\cup C =\{1, 2, 3, 4, 5, 6, 7, 8\} \Rightarrow
+\#(A\cup C)= 8.
+$
+
+\end{enumerate}
+
+\end{multicols}
+\subsection*{Conjuntos Finitos e Infinitos}
+
+\begin{itemize}
+    \item \textbf{Conjunto Finito.} Decimos que un conjunto $A$ es \textbf{finito} si tiene una cantidad finita de elementos. En términos prácticos, es aquel cuyos elementos pueden enumerarse uno a uno hasta llegar a un final.
+    
+    \item \textbf{Conjunto Infinito. } Un conjunto $A$ es \textbf{infinito} si no es finito. Es decir, su cantidad de elementos no puede ser representada por ningún número natural, pues el proceso de conteo nunca termina.
+\end{itemize}
+
+
+\textbf{Ejemplos:}
+\begin{itemize}
+    \item $A = \{ x \in \mathbb{Z} \mid 1 \leq x \leq 100 \}$ es un conjunto \textbf{finito} ($\#A = 100$).
+    \item $\mathbb{Q} = \{ \text{Números racionales} \}$ es un conjunto \textbf{infinito}.
+\end{itemize}
+
+
+
+
+
+
+ \subsection*{Propiedades de la Cardinalidad con Ejemplos}
+
+Sean $A$ y $B$ conjuntos finitos. Se cumplen las siguientes propiedades:
+
+\begin{enumerate}
+    \item \textbf{Conjunto Vacío:} $\# \emptyset = 0$.\\ \textbf{Ejemplos:}
+    \begin{enumerate}
+        \item Si $A = \{x \in \mathbb{N} \mid 1 < x < 2\}$, como no hay naturales entre 1 y 2, $A = \emptyset$ y $\#A = 0$.
+        \item El conjunto de personas vivas con 300 años de edad es vacío, su cardinalidad es 0.
+    \end{enumerate}
+    
+    \item \textbf{Unión de Conjuntos Disjuntos:} Si $A \cap B = \emptyset$, entonces $\#(A \cup B) = \#A + \#B$.\\ \textbf{Ejemplos:}
+    \begin{enumerate}
+        \item Si $A = \{1, 2\}$ y $B = \{3, 4, 5\}$, entonces $\#(A \cup B) = 2 + 3 = 5$.
+        \item En una sala, si hay 15 alumnos hombres ($H$) y 12 alumnas mujeres ($M$), el total es $\#(H \cup M) = 15 + 12 = 27$.
+    \end{enumerate}
+    
+    \item \textbf{Principio de Inclusión-Exclusión:} Si los conjuntos no son disjuntos ($A \cap B \neq \emptyset$), debemos restar la intersección para no duplicar elementos:
+    \[ \#(A \cup B) = \#A + \#B - \#(A \cap B). \]\\
+    \textbf{Ejemplos:}
+    \begin{enumerate}
+        \item Si $A = \{a, b, c\}$ y $B = \{c, d\}$, la intersección es el conjunto $\{c\}$. Luego, $\#(A \cup B) = 3 + 2 - 1 = 4$.
+        \item En un grupo de 10 personas, 6 hablan inglés y 5 hablan español. Si 2 hablan ambos idiomas, el total de personas es $6 + 5 - 2 = 9$.
+    \end{enumerate}
+    
+    \item \textbf{Cardinalidad del Conjunto Potencia}. Si $\#A = n$, entonces $\#\mathbf{P}(A) = 2^n$.\\
+    \textbf{Ejemplos:}
+    \begin{enumerate}
+        \item Si $A = \{1, 2, 3\}$, tiene $n=3$ elementos. Su conjunto potencia tiene $2^3 = 8$ subconjuntos.
+        \item Para un conjunto unitario $B = \{x\}$, $\#B = 1$, por lo que $\#\mathbf{P}(B) = 2^1 = 2$. (Los subconjuntos son $\emptyset$ y $\{x\}$).
+    \end{enumerate}
+    \item \textbf{Cardinalidad del producto Cartesiano}.
+    Si  $\#A=m$  y el conjunto $\#B= n$, entonces
+\[
+\#(A \times B) = m \cdot n.
+\]
+\textbf{Ejemplos:}
+\begin{enumerate}
+    \item  $A = \{1, 2\}$ y $B = \{3, 4, 5\}$. Entonces $\#A = 2,  \#B = 3$ \text{entonces} $\#(A \times B) = 6$. Lo cual podemos verifcar directamente con el conjunto 
+\[
+A \times B = \{(1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5)\}.
+\]
+
+
+\end{enumerate}
+\end{enumerate}
+\newpage
+\section{Resumen de Propiedades los Conjuntos}
+
+
+% ============================
+%  UNIÓN
+% ============================
+{\large\bfseries Propiedades de la Unión}
+
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Nombre} & \textbf{Propiedad} \\ \midrule
+Conmutativa & $A \cup B = B \cup A$ \\
+Asociativa  & $(A \cup B)\cup C = A \cup (B \cup C)$ \\
+Idempotencia & $A \cup A = A$ \\
+Neutro      & $A \cup \varnothing = A$ \\
+Absorción   & $A \cup (A \cap B) = A$ \\
+Distributiva sobre $\cap$ & $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ \\
+   & $A \cup U = U$ \\ 
+   & $A\cup A^C=U$\\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+
+% ============================
+%  INTERSECCIÓN
+% ============================
+{\large\bfseries Propiedades de la Intersección}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Nombre} & \textbf{Propiedad} \\ \midrule
+Conmutativa & $A \cap B = B \cap A$ \\
+Asociativa  & $(A \cap B)\cap C = A \cap (B \cap C)$ \\
+Idempotencia & $A \cap A = A$ \\
+Neutro      & $A \cap U = A$ \\
+Absorción   & $A \cap (A \cup B) = A$ \\
+Con el vacío & $A \cap \varnothing = \varnothing$ \\
+Distributiva sobre $\cup$ & $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$ \\
+& $A\cap A^C=\varnothing$\\
+\bottomrule
+\end{tabularx}
+
+% ============================
+%  COMPLEMENTO
+% ============================
+{\large\bfseries Propiedades del Complemento}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Nombre} & \textbf{Propiedad} \\ \midrule
+Doble complemento & $(A^c)^c = A$ \\
+Del universo      & $U^c = \varnothing$ \\
+Del vacío         & $\varnothing^c = U$ \\
+De Morgan I       & $(A \cup B)^c = A^c \cap B^c$ \\
+De Morgan II      & $(A \cap B)^c = A^c \cup B^c$ \\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+
+% ============================
+%  DIFERENCIA
+% ============================
+{\large\bfseries Propiedades de la Diferencia}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Nombre} & \textbf{Propiedad} \\ \midrule
+Con sí mismo          & $A - A = \varnothing$ \\
+Con vacío             & $A - \varnothing = A$ \\
+Vacío menos conjunto  & $\varnothing - A = \varnothing$ \\
+Relación c/compl.     & $A - B = A \cap B^c$ \\
+Distrib. sobre $\cup$ & $A - (B \cup C) = (A - B)\cap(A - C)$ \\
+Distrib. sobre $\cap$ & $A - (B \cap C) = (A - B)\cup(A - C)$ \\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+
+% ============================
+%  CONTENCIÓN
+% ============================
+\newpage
+{\large\bfseries Propiedades de la Contención}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Nombre} & \textbf{Propiedad} \\ \midrule
+Reflexiva     & $A \subset A$ \\
+Antisimétrica & $A\subset B \ \text{ y }\ B\subset A \Rightarrow A=B$ \\
+Transitiva    & $A\subset B \ \text{ y }\ B\subset C \Rightarrow A\subset C$ \\
+Vacío         & $\varnothing \subset A$ \\
+Universal     & $A \subset U$ \\
+& $x\in A \Longleftrightarrow \{x\}\subset A$\\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+
+% ============================
+%  POTENCIA
+% ============================
+{\large\bfseries Propiedades del Conjunto Potencia}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Nombre} & \textbf{Propiedad} \\ \midrule
+Contiene vacío   & $\varnothing \in \mathbf P(A)$ \\
+Contiene a $A$   & $A \in \mathbf P(A)$ \\
+Monotonía        & $A \subset B \Rightarrow \mathbf P(A)\subset\mathbf P(B)$ \\
+Cardinal         & $\#\mathbf P(A) = 2^{\#A}$ \\
+Potencia del vacío & $\mathbf P(\varnothing)=\{\varnothing\}$ \\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+
+% ============================
+%  CARDINAL
+% ============================
+{\large\bfseries Propiedades de la Cardinalidad}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Nombre} & \textbf{Propiedad} \\ \midrule
+Del vacío           & $\#\varnothing=0$ \\
+De la potencia        & $\#\mathbf P(A) = 2^{\#A}$ \\
+Unión disjunta      & $A\cap B=\varnothing \Rightarrow \#(A\cup B)=\#A+\#B$ \\
+Unión general       & $\#(A\cup B) = \#A + \#B - \#(A\cap B)$ \\
+Producto cartesiano & $\#(A\times B) = \#A\,\cdot\#B$ \\
+\bottomrule
+\end{tabularx}
+
+
+
+% ============================
+% 
+
+
+
+
+
+
+\newpage
+\section{Ejercicios}
+\begin{enumerate}
+    \item Escribir por extensión cada uno de los siguientes conjuntos:
+    \begin{multicols}{2}
+        \begin{enumerate}
+    \item $
+A = \{x : x \in \mathbb{N},\ 1 < x \le 5\}
+$
+\item $
+B = \{3x : x \in \mathbb{N},\ 3 \le x \le 6\}
+$
+\item $
+C = \{x^{2} : x \in \mathbb{N},\ 5 \le x < 8\}
+$
+\item $
+D = \left\{ \dfrac{2x - 1}{5} :x \in \mathbb{N},\ x = 3 \right\}
+$
+\item $E= \{x\in \mathbb{R}: (x+1)(2x-3)(x-4)=0\}$
+%\item $F=\{x\in \mathbb{Z}: 5x-7<3\}$
+\item $G=\{x\in \mathbb{N}: x^2-6x=0\}$
+\end{enumerate}
+    \end{multicols}
+
+
+\item Escribir por comprensión los siguientes conjuntos
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $A = \{2,4,6,8,10\}$
+    \item Los números enteros mayores que $3$.
+    \item $B=\{1, 4, 9,  16, 25, ...\}$
+    \item $C=\{-5, -3, -1 , 1, 3, 5, 7\}$
+    \item $D=\{2, 3, 5, 7, 11, 13, 17, 19, 23, ....\}$
+    \item $E=\{1,3,5,7,9,11,\ldots\}$.
+    \item Los números reales entre $-2$ y $\sqrt{3},$ sin incluir los extremos.
+    \item Los números enteros pares comprendidos entre $-6$ y $6$, incluyendo los extremos.
+    \item Los números reales cuyo cuadrado es menor que $25$ y mayor o igual que $4$.
+\end{enumerate}
+\end{multicols}
+
+
+\item Halle $6$ elementos de cada uno de los siguientes conjuntos.
+\begin{multicols}{2}
+   \begin{enumerate}
+    \item $\{\,2n + 1 : n \in \mathbb{N}\,\}$
+    \item $\{\,2n : n \in \mathbb{N}\,\}$
+    \item $\{\,n^{2} : n \in \mathbb{N}\,\}$
+    \item $\{\,n^{3} - 4 : n \in \mathbb{Z}\,\}$
+    \item $\{\,1 - n^{2} : n \in \mathbb{Z}\,\}$
+    \item $\{\,2^{n} : n \in \mathbb{N}\,\}$
+    \item $\{\,r \in \mathbb{Q} : 0 < r < 1\,\}$
+    \item $\mathbf{P}(\{1,2,3,4,5\})$
+\end{enumerate} 
+\end{multicols}
+
+
+\item Sea el conjunto $T = \{a,\ 2,\ 23,\ \{b\},\ 3\}$. Indique si las siguientes afirmaciones son verdaderas (V) o falsas (F), según corresponda:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $a \in T$
+    \item $b \in T$
+    \item $2 \in T$
+    \item $3 \in T$
+    \item $23 \in T$
+    \item  $\{a\} \in T$
+    \item $\{6\} \in T$
+    \item $\{b\} \in T$
+    \item $\{b,3\} \in T$
+\end{enumerate}
+\end{multicols}
+
+\item Considere dos conjuntos $A, B$. 
+\begin{enumerate}
+    \item[a)] Haga el diagrama de Venn de los siguientes conjuntos:
+    \[
+    A \cap (B \cup C), \qquad (A \cap B) \cup (A \cap C).
+    \]
+
+    \item[b)] Use los diagramas anteriores para convencerse que
+    \[
+    A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C).
+    \]
+\end{enumerate}
+
+\item Sean $A, B, C$ conjuntos. Al igual que el ejercicio anterior, use diagramas de ven para justificar las siguientes afirmaciones:
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item
+    $
+    A = (A \cap B) \cup (A - B).
+    $
+
+    \item
+    $
+    A \cup B = (A - B) \cup (A \cap B) \cup (B - A).
+    $
+
+    \item $(A\cup B)^c = A^c\cap B^c.$
+
+
+    \item
+    $
+    (A \cap B)- C = (A - C)\cap (B - C).
+    $
+
+    \item
+    $
+    (A - B)-C = A - (B \cup C).
+    $
+\end{enumerate}
+\end{multicols}
+
+
+
+
+
+
+
+\item Sea el conjunto $A=\{5a-3,\,27\}.$
+Si $A$ es un conjunto unitario, determine el valor de $a^2+1$.
+\item Si los conjuntos $A$ y $B$ son iguales, donde
+\[
+A=\{3a+5,\,7\}, \qquad B=\left\{\frac{b}{2}-3,\,5\right\},
+\]
+determine el valor de $a-b$.
+
+\item Sea
+\[
+A=\{5x-1: x \in \mathbb{N},\; 2 < x \leq 6\}.
+\]
+
+Indique si las siguientes afirmaciones son verdaderas (V) o falsas (F), según corresponda:
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\#A=5$ 
+\item $A$ tiene $16$ subconjuntos
+\item $A$ tiene $32$ subconjuntos
+\item $\varnothing \in P(A)$
+\item$\{14,19\} \in P(A)$
+\end{enumerate}
+\end{multicols}
+
+
+\item Sea $
+P=\{3,\{7\},\{9,10\},\{4\},2,4\}.$
+Indique si las siguientes afirmaciones son verdaderas (V) o falsas (F), según corresponda:
+\begin{multicols}{2}
+  \begin{enumerate}[A)]
+\item $2 \in P$
+\item  $\{2\} \subset P$
+\item $\{9,10\} \subset P$
+\item $\{\{4\}\} \subset P$
+\item $\varnothing \subset P$
+\item $0\in P$
+\end{enumerate}  
+\end{multicols}
+
+\item Si $A=\{7, 8, 5 ,4 ,3\}$,  B=\{5 , 4, 9, 10\} y  $C=\{4, 9, 7, 12\}$ y el conjunto universo es $U=\{x\in\mathbb{N}: 1\leq x\leq 15\}.$
+Hallar
+\begin{multicols}{3}
+    \begin{enumerate}
+    \item $A\cup B$
+    \item $A\cup C$
+    \item $B\cap C$
+    \item $A\cup B\cup C$
+    \item $ (A \cup B)\cap C$
+    \item $A-B$
+    \item $B-C$
+    \item $A-(B\cup C)$
+    \item $A\cap B\cap C$
+    \item $A^c$
+    \item $B^c$
+    \item $C^c$
+    \item $(A\cup B)^c$
+    \item $A^c \cap B^c$
+    \item $(C\cap B)^c\cap A^c 
+    $
+\end{enumerate}
+\end{multicols}
+
+
+
+\item Sean los conjuntos
+$A=\{1,2,3,4,\ldots,10\}$,
+$
+B=\{n : n \text{ es un número par entre } 3 \text{ y } 9\}
+$, $
+C=\{3,4,5,\ldots,10\}.
+$
+
+¿Cuál de las siguientes alternativas es incorrecta?
+\begin{multicols}{3}
+\begin{enumerate}[A)]
+\item $\# B=3$
+\item $\# (B\cap C)=3$
+\item $A\cap B=C\cap B$
+\item $A\cup C=C$
+\item$8\in C$
+\end{enumerate}
+\end{multicols}
+
+
+
+\item Sean los conjuntos
+\[
+A=\{1,3,5,7,9,12\}, \qquad B=\{3,9,8,10,11\}.
+\]
+
+Entonces, indique si las siguientes afirmaciones son verdaderas (V) o falsas (F):
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $8\in A\cap B$
+\item $12\in (A\cap B)$
+\item $\#(A\cup B)=11$
+\item $(A\cup B)-(A\cap B)=\{1,5,7,8,10,11\}$
+\end{enumerate}
+\end{multicols}
+
+
+\item Si en un sala de $60$ alumnos, $20$ aprobaron sólo Literatura, $30$ aprobaron Literatura y Matemática, ¿cuántos alumnos aprobaron sólo Matemática? (Todos los alumnos aprueban al menos uno de los cursos
+mencionados)
+\item De los $60$ alumnos que componen un salón de clases $32$ juegan fútbol y $25$ juegan básquet. ¿Cuántos juegan exclusivamente un
+deporte si $10$ no practican ninguno?
+
+\item Dado: $A=\{2, 4, 6, 8, ... ,48,  50\}$, $ B=\{3,  6,  9,  12,\ldots 45,  48\}$. Se pide:
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item Expresar $A$ y $B$ por comprensión.
+    \item $A\cap B$ y expresarlo por comprensión y extensión.
+    \item $\#A$, $\#B$.
+    \item $\#(A\cap B)$
+    \item $\#(A\cup B)$
+    \item $\# P(A)$
+    
+\end{enumerate}
+\end{multicols}
+
+\item Sea $A$ = \{1\}. Hallar $P(A)$ y $P(P(A))$. 
+\item Sea $B=\{a, b\}$ y $C= \{a, b, c\}$, $D=\{a, b, c, d\}$. Hallar $P(B)$, $P(C)$ y $P(C)$, ¿cuántos elementos tiene cada uno de estos conjunto?.
+
+\item \textbf{Subscripciones de Servicion de Streaming} \\
+En un grupo de 30 estudiantes, se analizó el uso de tres servicios de streaming: Netflix ($N$), Disney+ ($D$) y YouTube Premium ($Y$). Tras el relevamiento, se registraron los siguientes datos:
+\begin{itemize}
+    \item $\#N = 15$, $\#D = 13$, $\#Y = 10$.
+    \item $\#(N \cap D) = 6$, $\#(N \cap Y) = 5$, $\#(D \cap Y) = 4$.
+    \item $\#(N \cap D \cap Y) = 2$.
+\end{itemize}
+
+A partir de esta información, determine:
+\begin{enumerate}
+    \item Dibuje un diagrama de Venn que represente la situación, indicando la cantidad de elementos en cada región.
+    \item ¿Cuántos estudiantes utilizan \textbf{únicamente} la plataforma Netflix?
+    \item ¿Cuántos estudiantes no están suscritos a \textbf{ninguna} de las tres plataformas mencionadas?
+    \item ¿Cuál es el porcentaje de estudiantes que utilizan  \textbf{exactamente dos} plataformas?
+\end{enumerate}
+
+\item \textbf{
+Análisis de Vulnerabilidad Social}
+
+En un estudio realizado por el departamento de asistencia social de una municipalidad, se encuestó a un grupo de \textbf{40 familias} en situación de riesgo para evaluar tres carencias críticas: \textbf{Falta de acceso a Agua Potable ($A$)}, \textbf{Desempleo ($D$)} y \textbf{Hacinamiento ($H$)}.
+
+Tras tabular los datos, se obtuvieron los siguientes resultados:
+\begin{itemize}
+    \item \textbf{20 familias} tienen falta de acceso a Agua Potable ($A$).
+    \item \textbf{18 familias} enfrentan una situación de Desempleo ($D$).
+    \item \textbf{16 familias} viven en condiciones de Hacinamiento ($H$).
+    \item \textbf{7 familias} sufren de falta de Agua y Desempleo.
+    \item \textbf{8 familias} enfrentan Desempleo y Hacinamiento.
+    \item \textbf{6 familias} presentan falta de Agua y Hacinamiento.
+    \item \textbf{3 familias} padecen las tres carencias simultáneamente ($A \cap D \cap H$).
+\end{itemize}
+Basándote en los datos anteriores, determine:
+\begin{enumerate}
+    \item Dibuje un diagrama de Venn que represente la situación, indicando la cantidad de elementos en cada
+región.
+    \item Determina cuántas familias presentan \textbf{al menos una} de estas carencias.
+    \item ¿Cuántas familias de la muestra \textbf{no presentan ninguna} de las tres problemáticas?
+    \item ¿Cuántas familias sufren \textbf{únicamente} de Desempleo?
+    \item ¿Cuántas familias tienen \textbf{exactamente dos} de estas carencias?
+\end{enumerate}
+
+
+\item \textbf{Gestión de Clubes y Cumplimiento de Normativa}.
+
+
+
+En una institución educativa se han conformado dos clubes de alto rendimiento. 
+Debido a la alta exigencia académica, el reglamento interno estipula que ningún 
+estudiante puede pertenecer a ambos clubes simultáneamente para garantizar su 
+bienestar y rendimiento.
+
+\medskip
+
+Los listados actuales son los siguientes:
+
+\[
+A=\{\text{Ana, Beto, Carla, Diego, Raúl, Felipe, Javiera, Felipe, Hugo}\} \quad \text{(Club de Robótica)}
+\]
+
+\[
+B=\{\text{Carla, Diego, Fabián, Felipe Gloria, Hugo, Matías, Javiera, Ana}\} \quad \text{(Club de Debate)}
+\]
+
+
+
+La coordinación académica debe regularizar la situación de los estudiantes. 
+Aquellos que cumplen con la norma (estar en un solo club) recibirán su credencial 
+de membresía, mientras que los que están en falta (pertenecen a ambos) serán citados 
+para decidir por cuál club optarán.
+
+\bigskip
+
+\textbf{Preguntas}
+
+\begin{enumerate}
+
+\item \textbf{Análisis de Infracción $(A\cap B)$}
+
+Identifica por extensión el conjunto intersección entre $A$ y $B$. 
+
+¿Qué situación administrativa enfrentan estos estudiantes según el contexto del problema?
+
+\item \textbf{Regularización mediante Diferencia Simétrica $(A\triangle B)$}
+
+Determina por extensión el conjunto de estudiantes que pertenecen a un solo club.  
+Estos son los alumnos que cumplen la normativa y que tienen derecho a recibir su credencial inmediatamente.
+
+\item \textbf{Representación gráfica}
+
+Construye un \textbf{diagrama de Venn} para los conjuntos $A$ y $B$ y sombrea la región que representa a los estudiantes que recibirán su credencial.
+
+\end{enumerate}
+
+
+
+
+
+    
+
+\item Sea el conjunto 
+\[
+U = \{a^{2} + 16,\ 25,\ b - 7,\ 8\}.
+\]
+Si $\#U = 2$ y  tanto $a$ y $b$ son números impares, determine el valor de $a^2 - b$.
+
+
+\item Dertermina por extensión cada uno de los siguientes conjuntos:
+\begin{enumerate}
+    \item $
+J = \left\{ \dfrac{4x + 5}{3}:\; x \in \mathbb{Z},\ 3 < x < 7 \right\}
+$
+
+\item  $V = \left\{ \left(\dfrac{4x + 5}{3}\right) \in \mathbb{Z} :\; x \in \mathbb{Z},\ 3 < x < 7 \right\}
+$
+\item  $V = \left\{ \left(\dfrac{4x + 5}{3}\right) \in \mathbb{Z} :\; x \in \mathbb{R},\ 3 < x < 7 \right\}
+$
+\end{enumerate}
+\item Dado los conjuntos $C=\{2a+1: 1<a<8, a\in \mathbb{Z}\}$ y $D=\{(3a-12)\in \mathbb{N}: 1<a<8, a\in \mathbb{Z}\}$. Halle la suma del mayor elemento de C más el
+mayor elemento de D.
+
+
+\item Dado el conjunto $A$
+
+\[
+A = \{5, 6, \{6\},\ \{\{8\}\},\ \{7,8\}\}.
+\]
+
+Determine si las siguientes afirmaciones son verdaderas o falsas.
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $\{5\} \in A$
+    \item $6 \in A$
+    \item $\{5\} \subset A$
+    \item $\{6\} \subset A$
+    \item $\{\{8\}\} \subset A$
+    \item $\{7,8\} \notin A$
+    \item $\{\{7,8\}\} \not\subset A$
+\end{enumerate}
+\end{multicols}
+\item Los siguientes conjuntos son unitarios e iguales
+$A = \{2a+b, c\}$;
+$B = \{2c -7, 5b+2\}$.
+Calcule a +b+c.
+
+
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,76 @@
+% Soporte Latex en Español
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Márgenes
+\usepackage[top=2cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+
+% Sangría
+\setlength{\parindent}{0pt}
+
+% P aquete para incluir hipervinculos
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+
+% Para insertar imágenes
+\usepackage{graphicx} 
+
+% Soporte para matemáticas ams
+\usepackage{amsmath, amsfonts, amssymb}
+
+\newcommand{\sen}{\mathop{\rm sen}\nolimits} %seno
+\newcommand{\arcsen}{\mathop{\rmarcsen}\nolimits}
+\newcommand{\arcsec}{\mathop{\rmarcsec}\nolimits}
+
+% Tratamiento de objetos flotantes
+\usepackage{float}
+
+% Tipo de letra
+\usepackage{fourier}
+
+% Múltiples columnas
+\usepackage{multicol}
+\usepackage{enumerate}
+
+% Tablas con estilo fancy
+\usepackage{booktabs}
+
+
+% tikz
+
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+% Encabezados-----------------------------------------
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\setlength{\arrayrulewidth}{0.5mm}
+\pagestyle{fancy}
+\renewcommand{\headrule}{}
+\renewcommand{\footrulewidth}{2pt}
+\fancyfoot[L]{\textbf{Electivo Probabilidad y Estadística}}
+\fancyfoot[R]{}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\usepackage{lastpage}
+\fancyfoot[C]{\textbf{\thepage\ / \pageref{LastPage}}}
+% Comando para el encabezado-------
+\newcommand{\encabezado}{
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\includegraphics[scale = 0.3]{logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\raggedleft\fbox{%
+            \begin{tabular}{l}
+                \textbf{Departamento de Matemáticas} \\
+                Marzo/2026
+            \end{tabular}%
+        }
+\end{minipage}}
+\vspace{1cm}
+
+%-----------------------------------
+

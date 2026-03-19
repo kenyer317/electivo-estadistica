@@ -1,0 +1,473 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage{amsmath, amssymb, bm, amsfonts}
+\usepackage{multicol}
+
+% settings for the beamer theme
+\usetheme[progressbar= frametitle]{metropolis}
+%\setbeamertemplate{frame numbering}[fraction]
+\setbeamertemplate{footline}{}
+\useoutertheme{metropolis}
+\useinnertheme{metropolis}
+\usecolortheme{spruce}
+\setbeamercolor{background canvas}{bg=white}
+\definecolor{mygreen}{rgb}{.125, .5, .125}
+\usecolortheme[named=mygreen]{structure}
+
+% setting for the title
+%\title[Short Title]{Beamer-Krumel}
+\title{\Huge Vocabulario de Conjuntos}
+%\subtitle{Subtitle Here}
+\usepackage{graphicx} % Required for inserting images
+%\author{Kenyer Aguiar}
+%\institute{Institute}
+\institute{\large\textbf{Objetivo de la clase:} \\[6pt]
+Practicar vocabulario básico de Teoría de Conjuntos}
+\date{}
+
+% No tocar permite que align y \pause funcionen bien
+\mode<presentation> { \setbeamercovered{transparent=0} }
+\makeatletter
+\def\pdftex@driver{pdftex.def}
+\ifx\Gin@driver\pdftex@driver
+  \def\pgfsys@color@unstacked#1{%
+    \pdfliteral{\csname\string\color@#1\endcsname}%
+  }
+\fi
+\makeatother
+%------------------------------
+
+
+
+% Definir color gris claro
+\definecolor{grisclaro}{RGB}{235,235,235}
+
+% Entorno personalizado sin título
+\newenvironment{mibloque}
+{
+\begin{center}
+\begin{beamercolorbox}[
+    rounded=true,
+    shadow=false,
+    sep=1em,
+    wd=0.8\textwidth
+]{}
+\setbeamercolor{background canvas}{bg=grisclaro}
+\color{black}
+\setbeamercolor{block body}{bg=grisclaro}
+\begin{beamercolorbox}[rounded=false,sep=0.3em,wd=\textwidth]{block body}
+}
+{
+\end{beamercolorbox}
+\end{beamercolorbox}
+\end{center}
+}
+
+%------------------------------
+
+
+\newcommand{\cuadro}[1]{
+\tikz[baseline=(m.base)]{
+        \node[draw=mygreen, text=mygreen, inner sep=2pt, thick, anchor=base, fill = mygreen!10] (m) {#1}
+        ;}\quad}
+
+
+
+\newcommand{\ejemplo}{%
+  \tikz[baseline=(m.base)]{
+    \node[
+      draw=mygreen,
+      text=mygreen,
+      inner sep=2pt,
+      thick,
+      anchor=base,
+      fill=mygreen!10
+    ] (m) {\textbf{Ejemplo}};
+  }%
+\,\,}
+
+\newcommand{\sol}{%
+  \tikz[baseline=(m.base)]{
+    \node[
+      draw=mygreen,
+      text=mygreen,
+      inner sep=2pt,
+      thick,
+      anchor=base,
+      fill=mygreen!10
+    ] (m) {\textbf{Solución:}};
+  }%
+\,\,}
+        
+\begin{document}
+% filling for blocks
+\metroset{block=fill}
+
+\begin{frame}
+\titlepage  
+\end{frame}
+
+%--------------------------------
+\begin{frame}[c]{}
+\begin{block}{Pregunta 1}
+\large
+¿Cómo se define formalmente la relación de pertenencia en teoría de conjuntos?
+
+\begin{enumerate}[A)]
+    \item Es la relación que existe entre dos conjuntos cuando uno está dentro del otro.
+    \item Es la operación que combina todos los elementos de dos colecciones distintas.
+    \item Es el número total de elementos distintos que posee una agrupación.
+    \item Es el vínculo que se establece exclusivamente entre un objeto (elemento) y el conjunto que lo contiene.
+\end{enumerate}
+\end{block}
+\end{frame}
+%--------------------------------
+\begin{frame}
+\begin{block}{Pregunta 2}
+Un conjunto que no contiene ningún elemento se denomina vacío. ¿Cuál es la propiedad fundamental de su cardinalidad?
+
+\begin{enumerate}[A)]
+    \item Su cardinal es indefinido.
+    \item Su cardinal es exactamente igual a 0.
+    \item Su cardinal es infinito pues no tiene límites.
+    \item Su cardinal es 1, representando la existencia del conjunto mismo.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Pregunta 3}
+¿Qué caracteriza a dos conjuntos denominados \textbf{disjuntos}?
+
+\begin{enumerate}[A)]
+    \item Su intersección es el conjunto vacío.
+    \item La unión de ambos da como resultado el conjunto universo.
+    \item Uno de ellos es subconjunto del otro.
+    \item Tienen exactamente la misma cantidad de elementos.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Pregunta 4}
+Si un conjunto \(A\) tiene una cantidad de elementos que se puede contar y el proceso de conteo termina, el conjunto se clasifica como:
+
+\begin{enumerate}[A)]
+    \item Potencia
+    \item Unitario
+    \item Finito
+    \item Universo
+\end{enumerate}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\begin{block}{Pregunta 5}
+Dada la definición de \textbf{Subconjunto}, ¿cuál de las siguientes afirmaciones es siempre verdadera?
+
+\begin{enumerate}[A)]
+    \item El conjunto vacío no puede ser subconjunto de un conjunto finito.
+    \item Todo conjunto es subconjunto de sí mismo.
+    \item Dos conjuntos disjuntos son subconjuntos entre sí.
+    \item Un subconjunto siempre debe tener menos elementos que el conjunto original.
+\end{enumerate}
+
+
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{Pregunta 6}
+¿A qué se refiere el término \textbf{Conjunto Universo} en un problema determinado?
+
+\begin{enumerate}[A)]
+    \item Al conjunto de todos los números reales existentes.
+    \item Al conjunto que resulta de la intersección de todos los conjuntos dados.
+    \item A la unión de todos los conjuntos infinitos.
+    \item Al conjunto que contiene todos los elementos relevantes para ese contexto o estudio particular.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{Pregunta 7}
+El \textbf{Complemento} de un conjunto \(A\), denotado como \(A^{c}\), se define como:
+
+\begin{enumerate}[A)]
+    \item La diferencia entre el conjunto \(A\) y el conjunto vacío.
+    \item El conjunto que contiene solo los elementos negativos de \(A\).
+    \item El conjunto de todos los elementos que pertenecen al universo pero no pertenecen a \(A\).
+    \item El conjunto de elementos que \(A\) comparte con el universo.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Pregunta 8}
+Si el cardinal de un conjunto \(A\) es \(n\), ¿cuántos elementos tiene su \textbf{Conjunto Potencia} \(P(A)\)?
+
+\begin{enumerate}[A.]
+    \item \(2^{n}\)
+    \item \(n^{2}\)
+    \item \(2n\)
+    \item \(n-2\) 
+\end{enumerate}
+
+
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{Pregunta 9}
+El \textbf{Producto Cartesiano} \(A \times B\) es un conjunto cuyos elementos son:
+
+\begin{enumerate}[A.]
+    \item La multiplicación de los valores numéricos de los elementos de \(A\) y \(B\).
+    \item La unión de los conjuntos \(A\) y \(B\) dispuesta en una línea.
+    \item Conjuntos que contienen un elemento de \(A\) y uno de \(B\) sin orden específico.
+    \item Pares ordenados \((a,b)\) donde \(a \in A\) y \(b \in B\).
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{Pregunta 2}
+
+\end{block}
+\end{frame}
+
+
+\end{document}
+

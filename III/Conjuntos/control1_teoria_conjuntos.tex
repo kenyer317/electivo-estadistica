@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\input{preambulo_est}
+\usepackage{enumerate}
+\usepackage{array}     % Para mejor manejo de tablas
+\usepackage{boldline}  % Para bordes más definidos si se desea
+\usepackage{amssymb}   % Símbolos adicionales
+%\setlength{\columnsep}{20pt}
+%\setlength{\columnseprule}{0.6pt}
+\begin{document}
+
+
+%Encabezado ---------------------------
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\includegraphics[scale = 0.3]{logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\raggedleft\fbox{%
+            \begin{tabular}{l}
+                \textbf{Departamento de Matemáticas} \\
+                Marzo/2026
+            \end{tabular}%
+        }
+\end{minipage}
+\vspace{20pt}
+
+%--------------------------------------
+
+
+\begin{center}
+   {\Large \textbf{EVALUACIÓN SUMATIVA}\\
+
+\textbf{ELECTIVO PROBABILIDAD Y ESTADÍSTICA III MEDIO}}
+\end{center}
+\begin{center}
+\begingroup
+\renewcommand{\arraystretch}{1.5} % Ajusta la altura de las filas
+\begin{tabular}{| p{0.35\textwidth} p{0.25\textwidth} p{0.20\textwidth} |} 
+ \hline 
+ \textbf{NOMBRE:} & & \textbf{PUNTAJE:} \quad\quad / \hfill \\ [0.5ex] 
+ \hline
+ \textbf{CURSO:} & \textbf{FECHA:} & \textbf{NOTA:} \\ [0.5ex] 
+ \hline 
+\end{tabular}
+\endgroup
+\end{center}
+
+\end{document}

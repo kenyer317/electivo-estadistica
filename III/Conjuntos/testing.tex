@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[a4paper, top=3cm, left=1cm, right=1cm]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+% --- Definición del encabezado especial ---
+\fancypagestyle{primera_pagina}{
+    \fancyhf{} % Limpia todo
+    \fancyhead[L]{\includegraphics[height=1.5cm]{logo.png}} 
+    \fancyhead[R]{%
+        \fbox{%
+            \begin{tabular}{l}
+                \textbf{Departamento de Matemáticas} \\
+                Marzo/2026
+            \end{tabular}%
+        }
+    }
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% --- Configuración general para el resto del documento ---
+\pagestyle{empty} % Esto quita encabezados y pies de página de todas las páginas
+
+\begin{document}
+
+% Aplicamos el estilo solo a ESTA página
+\thispagestyle{primera_pagina}
+\setlength{\headheight}{50pt} % Ajuste necesario para el logo
+
+\section*{Título del Reporte}
+Este es el contenido de la primera página que tiene el encabezado institucional.
+
+\newpage % Salto a la segunda página
+\setlength{\headheight}{0pt} 
+Esta segunda página ya no tendrá el logo ni el recuadro, estará totalmente limpia.
+
+\end{document}

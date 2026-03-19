@@ -1,0 +1,421 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\input{preambulo_est}
+\usepackage{enumerate}
+%\setlength{\columnsep}{20pt}
+%\setlength{\columnseprule}{0.6pt}
+\begin{document}
+
+
+%Encabezado ---------------------------
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\includegraphics[scale = 0.3]{logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt} % Crea un punto de anclaje en el borde superior
+\raggedleft\fbox{%
+            \begin{tabular}{l}
+                \textbf{Departamento de Matemáticas} \\
+                Marzo/2026
+            \end{tabular}%
+        }
+\end{minipage}
+\vspace{20pt}
+
+%--------------------------------------
+
+
+\begin{center}
+    {\Large \textbf{Guía de Teoría de Conjuntos}\\
+    Tercero Medio: Electivo Probabilidad y Estadística}
+\end{center}
+\section{Ejercicios}
+\begin{enumerate}
+    \item Escribir por extensión cada uno de los siguientes conjuntos:
+    \begin{multicols}{2}
+        \begin{enumerate}
+    \item $
+A = \{x : x \in \mathbb{N},\ 1 < x \le 5\}
+$
+\item $
+B = \{3x : x \in \mathbb{N},\ 3 \le x \le 6\}
+$
+\item $
+C = \{x^{2} : x \in \mathbb{N},\ 5 \le x < 8\}
+$
+\item $
+D = \left\{ \dfrac{2x - 1}{5} :x \in \mathbb{N},\ x = 3 \right\}
+$
+\item $E= \{x\in \mathbb{R}: (x+1)(2x-3)(x-4)=0\}$
+\item $F=\{x\in \mathbb{Z}: 5x-7<3\}$
+\item $G=\{x\in \mathbb{N}: x^2-6x=0\}$
+\end{enumerate}
+    \end{multicols}
+
+
+\item Escribir por comprensión los siguientes conjuntos
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $A = \{2,4,6,8,10\}$
+    \item Los números enteros mayores que $3$.
+    \item $B=\{1, 2, 9,  16, 25, ...\}$
+    \item $C=\{-5, -3, -1 , 1, 3, 5, 7\}$
+    \item $D=\{2, 3, 5, 7, 11, 13, 17, 19, 23, ....\}$
+    \item $E=\{1,3,5,7,9,11,\ldots\}$.
+    \item Los números reales entre $-2$ y $\sqrt{3},$ sin incluir los extremos.
+    \item Los números enteros pares comprendidos entre $-6$ y $6$, incluyendo los extremos.
+    \item Los números reales cuyo cuadrado es menor que $25$ y mayor o igual que $4$.
+\end{enumerate}
+\end{multicols}
+
+
+\item Halle $6$ elementos de cada uno de los siguientes conjuntos.
+\begin{multicols}{2}
+   \begin{enumerate}
+    \item $\{\,2n + 1 : n \in \mathbb{N}\,\}$
+    \item $\{\,2n : n \in \mathbb{N}\,\}$
+    \item $\{\,n^{2} : n \in \mathbb{N}\,\}$
+    \item $\{\,n^{3} - 4 : n \in \mathbb{Z}\,\}$
+    \item $\{\,1 - n^{2} : n \in \mathbb{Z}\,\}$
+    \item $\{\,2^{n} : n \in \mathbb{N}\,\}$
+    \item $\{\,r \in \mathbb{Q} : 0 < r < 1\,\}$
+    \item $\mathbf{P}(\{1,2,3,4,5\})$
+\end{enumerate} 
+\end{multicols}
+
+
+\item Sea el conjunto $T = \{a,\ 2,\ 23,\ \{b\},\ 3\}$. Indique si las siguientes afirmaciones son verdaderas (V) o falsas (F), según corresponda:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $a \in T$
+    \item $b \in T$
+    \item $2 \in T$
+    \item $3 \in T$
+    \item $23 \in T$
+    \item  $\{a\} \in T$
+    \item $\{6\} \in T$
+    \item $\{b\} \in T$
+    \item $\{b,3\} \in T$
+\end{enumerate}
+\end{multicols}
+
+\item Considere dos conjuntos $A, B$. 
+\begin{enumerate}
+    \item[a)] Haga el diagrama de Venn de los siguientes conjuntos:
+    \[
+    A \cap (B \cup C), \qquad (A \cap B) \cup (A \cap C).
+    \]
+
+    \item[b)] Use los diagramas anteriores para convencerse que
+    \[
+    A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C).
+    \]
+\end{enumerate}
+
+\item Sean $A, B, C$ conjuntos. Al igual que el ejercicio anterior, use diagramas de ven para justificar las siguientes afirmaciones:
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item
+    $
+    A = (A \cap B) \cup (A - B).
+    $
+
+    \item
+    $
+    A \cup B = (A - B) \cup (A \cap B) \cup (B - A).
+    $
+
+    \item $(A\cup B)^c = A^c\cap B^c.$
+
+
+    \item
+    $
+    (A \cap B)- C = (A - C)\cap (B - C).
+    $
+
+    \item
+    $
+    (A - B)-C = A - (B \cup C).
+    $
+\end{enumerate}
+\end{multicols}
+
+
+
+
+
+
+
+\item Sea el conjunto $A=\{5a-3,\,27\}.$
+Si $A$ es un conjunto unitario, determine el valor de $a^2+1$.
+\item Si los conjuntos $A$ y $B$ son iguales, donde
+\[
+A=\{3a+5,\,7\}, \qquad B=\left\{\frac{b}{2}-3,\,5\right\},
+\]
+determine el valor de $a-b$.
+
+\item Sea
+\[
+A=\{5x-1: x \in \mathbb{N},\; 2 < x \leq 6\}.
+\]
+
+Indique si las siguientes afirmaciones son verdaderas (V) o falsas (F), según corresponda:
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\#A=5$ 
+\item $A$ tiene $16$ subconjuntos
+\item $A$ tiene $32$ subconjuntos
+\item $\varnothing \in P(A)$
+\item$\{14,19\} \in P(A)$
+\end{enumerate}
+\end{multicols}
+
+
+\item Sea $
+P=\{3,\{7\},\{9,10\},\{4\},2,4\}.$
+Indique si las siguientes afirmaciones son verdaderas (V) o falsas (F), según corresponda:
+\begin{multicols}{2}
+  \begin{enumerate}[A)]
+\item $2 \in P$
+\item  $\{2\} \subset P$
+\item $\{9,10\} \subset P$
+\item $\{\{4\}\} \subset P$
+\item $\varnothing \subset P$
+\item $0\in P$
+\end{enumerate}  
+\end{multicols}
+
+\item Si $A=\{7, 8, 5 ,4 ,3\}$,  B=\{5 , 4, 9, 10\} y  $C=\{4, 9, 7, 12\}$ y el conjunto universo es $U=\{x\in\mathbb{N}: 1\leq x\leq 15\}.$
+Hallar
+\begin{multicols}{3}
+    \begin{enumerate}
+    \item $A\cup B$
+    \item $A\cup C$
+    \item $B\cap C$
+    \item $A\cup B\cup C$
+    \item $ (A \cup B)\cap C$
+    \item $A-B$
+    \item $B-C$
+    \item $A-(B\cup C)$
+    \item $A\cap B\cap C$
+    \item $A^c$
+    \item $B^c$
+    \item $C^c$
+    \item $(A\cup B)^c$
+    \item $A^c \cap B^c$
+    \item $(C\cap B)^c\cap A^c 
+    $
+\end{enumerate}
+\end{multicols}
+
+
+
+\item Sean los conjuntos
+$A=\{1,2,3,4,\ldots,10\}$,
+$
+B=\{n : n \text{ es un número par entre } 3 \text{ y } 9\}
+$, $
+C=\{3,4,5,\ldots,10\}.
+$
+
+¿Cuál de las siguientes alternativas es incorrecta?
+\begin{multicols}{3}
+\begin{enumerate}[A)]
+\item $\# B=3$
+\item $\# (B\cap C)=3$
+\item $A\cap B=C\cap B$
+\item $A\cup C=C$
+\item$8\in C$
+\end{enumerate}
+\end{multicols}
+
+
+
+\item Sean los conjuntos
+\[
+A=\{1,3,5,7,9,12\}, \qquad B=\{3,9,8,10,11\}.
+\]
+
+Entonces, indique si las siguientes afirmaciones son verdaderas (V) o falsas (F):
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $8\in A\cap B$
+\item $12\in (A\cap B)$
+\item $\#(A\cup B)=11$
+\item $(A\cup B)-(A\cap B)=\{1,5,7,8,10,11\}$
+\end{enumerate}
+\end{multicols}
+
+
+\item Si en un sala de $60$ alumnos, $20$ aprobaron sólo Literatura, $30$ aprobaron Literatura y Matemática, ¿cuántos alumnos aprobaron sólo Matemática? (Todos los alumnos aprueban al menos uno de los cursos
+mencionados)
+\item De los $60$ alumnos que componen un salón de clases $32$ juegan fútbol y $25$ juegan básquet. ¿Cuántos juegan exclusivamente un
+deporte si $10$ no practican ninguno?
+
+\item Dado: $A=\{2, 4, 6, 8, ... ,48,  50\}$, $ B=\{3,  6,  9,  12,\ldots 45,  48\}$. Se pide:
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item Expresar $A$ y $B$ por comprensión.
+    \item $A\cap B$ y expresarlo por comprensión y extensión.
+    \item $\#A$, $\#B$.
+    \item $\#(A\cap B)$
+    \item $\#(A\cup B)$
+    \item $\# P(A)$
+    
+\end{enumerate}
+\end{multicols}
+
+\item Sea $A$ = \{1\}. Hallar $P(A)$ y $P(P(A))$. 
+\item Sea $B=\{a, b\}$ y $C= \{a, b, c\}$, $D=\{a, b, c, d\}$. Hallar $P(B)$, $P(C)$ y $P(C)$, ¿cuántos elementos tiene cada uno de estos conjunto?.
+
+\item \textbf{Subscripciones de Servicion de Streaming} \\
+En un grupo de 30 estudiantes, se analizó el uso de tres servicios de streaming: Netflix ($N$), Disney+ ($D$) y YouTube Premium ($Y$). Tras el relevamiento, se registraron los siguientes datos:
+\begin{itemize}
+    \item $\#N = 15$, $\#D = 13$, $\#Y = 10$.
+    \item $\#(N \cap D) = 6$, $\#(N \cap Y) = 5$, $\#(D \cap Y) = 4$.
+    \item $\#(N \cap D \cap Y) = 2$.
+\end{itemize}
+
+A partir de esta información, determine:
+\begin{enumerate}
+    \item Dibuje un diagrama de Venn que represente la situación, indicando la cantidad de elementos en cada región.
+    \item ¿Cuántos estudiantes utilizan \textbf{únicamente} la plataforma Netflix?
+    \item ¿Cuántos estudiantes no están suscritos a \textbf{ninguna} de las tres plataformas mencionadas?
+    \item ¿Cuál es el porcentaje de estudiantes que utilizan  \textbf{exactamente dos} plataformas?
+\end{enumerate}
+
+\item \textbf{
+Análisis de Vulnerabilidad Social}
+
+En un estudio realizado por el departamento de asistencia social de una municipalidad, se encuestó a un grupo de \textbf{40 familias} en situación de riesgo para evaluar tres carencias críticas: \textbf{Falta de acceso a Agua Potable ($A$)}, \textbf{Desempleo ($D$)} y \textbf{Hacinamiento ($H$)}.
+
+Tras tabular los datos, se obtuvieron los siguientes resultados:
+\begin{itemize}
+    \item \textbf{20 familias} tienen falta de acceso a Agua Potable ($A$).
+    \item \textbf{18 familias} enfrentan una situación de Desempleo ($D$).
+    \item \textbf{16 familias} viven en condiciones de Hacinamiento ($H$).
+    \item \textbf{7 familias} sufren de falta de Agua y Desempleo.
+    \item \textbf{8 familias} enfrentan Desempleo y Hacinamiento.
+    \item \textbf{6 familias} presentan falta de Agua y Hacinamiento.
+    \item \textbf{3 familias} padecen las tres carencias simultáneamente ($A \cap D \cap H$).
+\end{itemize}
+Basándote en los datos anteriores, determine:
+\begin{enumerate}
+    \item Dibuje un diagrama de Venn que represente la situación, indicando la cantidad de elementos en cada
+región.
+    \item Determina cuántas familias presentan \textbf{al menos una} de estas carencias.
+    \item ¿Cuántas familias de la muestra \textbf{no presentan ninguna} de las tres problemáticas?
+    \item ¿Cuántas familias sufren \textbf{únicamente} de Desempleo?
+    \item ¿Cuántas familias tienen \textbf{exactamente dos} de estas carencias?
+\end{enumerate}
+
+
+\item \textbf{Gestión de Clubes y Cumplimiento de Normativa}.
+
+
+
+En una institución educativa se han conformado dos clubes de alto rendimiento. 
+Debido a la alta exigencia académica, el reglamento interno estipula que ningún 
+estudiante puede pertenecer a ambos clubes simultáneamente para garantizar su 
+bienestar y rendimiento.
+
+\medskip
+
+Los listados actuales son los siguientes:
+
+\[
+A=\{\text{Ana, Beto, Carla, Diego, Raúl, Felipe, Javiera, Felipe, Hugo}\} \quad \text{(Club de Robótica)}
+\]
+
+\[
+B=\{\text{Carla, Diego, Fabián, Felipe Gloria, Hugo, Matías, Javiera, Ana}\} \quad \text{(Club de Debate)}
+\]
+
+
+
+La coordinación académica debe regularizar la situación de los estudiantes. 
+Aquellos que cumplen con la norma (estar en un solo club) recibirán su credencial 
+de membresía, mientras que los que están en falta (pertenecen a ambos) serán citados 
+para decidir por cuál club optarán.
+
+\bigskip
+
+\textbf{Preguntas}
+
+\begin{enumerate}
+
+\item \textbf{Análisis de Infracción $(A\cap B)$}
+
+Identifica por extensión el conjunto intersección entre $A$ y $B$. 
+
+¿Qué situación administrativa enfrentan estos estudiantes según el contexto del problema?
+
+\item \textbf{Regularización mediante Diferencia Simétrica $(A\triangle B)$}
+
+Determina por extensión el conjunto de estudiantes que pertenecen a un solo club.  
+Estos son los alumnos que cumplen la normativa y que tienen derecho a recibir su credencial inmediatamente.
+
+\item \textbf{Representación gráfica}
+
+Construye un \textbf{diagrama de Venn} para los conjuntos $A$ y $B$ y sombrea la región que representa a los estudiantes que recibirán su credencial.
+
+\end{enumerate}
+
+
+
+
+
+    
+
+\item Sea el conjunto 
+\[
+U = \{a^{2} + 16,\ 25,\ b - 7,\ 8\}.
+\]
+Si $\#U = 2$ y  tanto $a$ y $b$ son números impares, determine el valor de $a^2 - b$.
+
+
+\item Dertermina por extensión cada uno de los siguientes conjuntos:
+\begin{enumerate}
+    \item $
+J = \left\{ \dfrac{4x + 5}{3}:\; x \in \mathbb{Z},\ 3 < x < 7 \right\}
+$
+
+\item  $V = \left\{ \left(\dfrac{4x + 5}{3}\right) \in \mathbb{Z} :\; x \in \mathbb{Z},\ 3 < x < 7 \right\}
+$
+\item  $V = \left\{ \left(\dfrac{4x + 5}{3}\right) \in \mathbb{Z} :\; x \in \mathbb{R},\ 3 < x < 7 \right\}
+$
+\end{enumerate}
+\item Dado los conjuntos $C=\{2a+1: 1<a<8, a\in \mathbb{Z}\}$ y $D=\{(3a-12)\in \mathbb{N}: 1<a<8, a\in \mathbb{Z}\}$. Halle la suma del mayor elemento de C más el
+mayor elemento de D.
+
+
+\item Dado el conjunto $A$
+
+\[
+A = \{5, 6, \{6\},\ \{\{8\}\},\ \{7,8\}\}.
+\]
+
+Determine si las siguientes afirmaciones son verdaderas o falsas.
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $\{5\} \in A$
+    \item $6 \in A$
+    \item $\{5\} \subset A$
+    \item $\{6\} \subset A$
+    \item $\{\{8\}\} \subset A$
+    \item $\{7,8\} \notin A$
+    \item $\{\{7,8\}\} \not\subset A$
+\end{enumerate}
+\end{multicols}
+\item Los siguientes conjuntos son unitarios e iguales
+$A = \{2a+b, c\}$;
+$B = \{2c -7, 5b+2\}$.
+Calcule a +b+c.
+
+
+
+\end{enumerate}
+
+\end{document}
