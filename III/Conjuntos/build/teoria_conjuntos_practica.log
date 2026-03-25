@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  20 MAR 2026 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  20 MAR 2026 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**control1_teoria_conjuntos.tex
-(./control1_teoria_conjuntos.tex
+**teoria_conjuntos_practica.tex
+(./teoria_conjuntos_practica.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -903,68 +903,57 @@ MM)
 Package: lastpagemodern 2024-07-07 v2.1c Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count338
 ) 
-))) (c:/texlive/2024/texmf-dist/tex/latex/shipunov/boldline.sty
-Package: boldline 2008/02/04 v0.2 Adjust line width in tables
-)
-(c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+))) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count339
 \l__pdf_internal_box=\box116
 )
-(build/control1_teoria_conjuntos.aux
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-)
-\openout1 = `control1_teoria_conjuntos.aux'.
+No file teoria_conjuntos_practica.aux.
+\openout1 = `teoria_conjuntos_practica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 7.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-12.
-
+7.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 7.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-12.
+7.
 
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 7.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-12.
+7.
 
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1000,11 +989,9 @@ LaTeX Info: Redefining \% on input line 12.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 12.
-(build/control1_teoria_conjuntos.out) (build/control1_teoria_conjuntos.out)
+Package hyperref Info: Link coloring ON on input line 7.
 \@outlinefile=\write5
-\openout5 = `control1_teoria_conjuntos.out'.
-
+\openout5 = `teoria_conjuntos_practica.out'.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1028,52 +1015,82 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 12.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 12.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 7.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 7.
 <logo.png, id=7, 179.92218pt x 180.675pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 18.
+Package pdftex.def Info: logo.png  used on input line 13.
 (pdftex.def)             Requested size: 53.97707pt x 54.20291pt.
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 28.
+ 23.
 
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 28.
+(Font)              scaled to size 11.03998pt on input line 23.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 28.
+(Font)              scaled to size 8.27998pt on input line 23.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 28.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+(Font)              scaled to size 6.43999pt on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 28.
+(Font)              scaled to size 11.03998pt on input line 23.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 28.
+(Font)              scaled to size 8.27998pt on input line 23.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 28.
+(Font)              scaled to size 6.43999pt on input line 23.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 84.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 84.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 84.
 
+Overfull \vbox (8.03069pt too high) has occurred while \output is active []
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 102.
 
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/
 texmf-dist/fonts/enc/dvips/base/8r.enc} <./logo.png>]
 
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 207.
+
+[2]
+
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 286.
+
+[3]
+
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 351.
+
+[4]
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 421.
+
+[5] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(build/control1_teoria_conjuntos.aux
+(build/teoria_conjuntos_practica.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1081,27 +1098,45 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
  ***********
-Package rerunfilecheck Info: File `control1_teoria_conjuntos.out' has not chang
-ed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `teoria_conjuntos_practica.out' has change
+d.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `teoria_conjuntos_practica.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  6D78FB9418EB64E3ED1A042465B046E9;93.
+
+Package lastpage Warning: Rerun to get the references right on input line 421.
+
  ) 
 Here is how much of TeX's memory you used:
- 24037 strings out of 473579
- 436605 string characters out of 5732257
- 835837 words of memory out of 5000000
- 46479 multiletter control sequences out of 15000+600000
- 592428 words of font info for 74 fonts, out of 8000000 for 9000
+ 24003 strings out of 473579
+ 433544 string characters out of 5732257
+ 844420 words of memory out of 5000000
+ 46339 multiletter control sequences out of 15000+600000
+ 611193 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,11n,96p,453b,567s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive
-/2024/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2024/texmf-dis
-t/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/a
-dobe/utopia/putri8a.pfb>
-Output written on build/control1_teoria_conjuntos.pdf (1 page, 98857 bytes).
+ 89i,12n,96p,453b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/202
+4/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2024/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/
+fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/ado
+be/utopia/putr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putri
+8a.pfb>
+Output written on build/teoria_conjuntos_practica.pdf (5 pages, 130559 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 134 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
